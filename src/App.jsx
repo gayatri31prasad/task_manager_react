@@ -7,7 +7,7 @@ import TaskManager from './screens/taskManager/taskManager';
 
 
 function App() {
-  return (
+  return (<>
     <SelectedCardProvider>
       <>
       <HashRouter>
@@ -25,6 +25,7 @@ function App() {
         </HashRouter>
       </>
     </SelectedCardProvider>
+  </>
   )
 }
 
