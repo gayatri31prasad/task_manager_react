@@ -1,0 +1,96 @@
+.MainDiv {
+  background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.AlertModal {
+  z-index: 100;
+}
+
+.modalStyle {
+  outline: none;
+  border-radius: 16px;
+  background-color: transparent;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 14px 0px;
+}
+
+.modalOverlayStyle {
+  z-index: 9;
+  inset: 0px;
+  display: flex;
+  outline: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000070;
+}
+
+.warningOrAlert {
+  width: 400px;
+  display: flex;
+  max-height: 400px;
+  position: relative;
+  border-radius: 12px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  white-space: break-spaces;
+  text-align: center;
+}
+
+.warningOrAlert button {
+  width: 120px;
+  height: 36px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  margin: 20px 0;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: #01774A;
+}
+
+.delAccModalErrLottie {
+  width: 120px;
+  height: 120px;
+  margin: 0px auto;
+}
+
+/* common css */
+
+.centerDiv{
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.centerDiv h2{
+  text-align: center;
+  margin-bottom:10px ;
+}
+
+.centerDiv button{
+  margin: 30px auto 0 auto;
+}
+
+/* end */
+
+@media screen and (max-width: 468px) {
+  .warningOrAlert {
+    min-width: calc(100vw - 80px);
+    max-width: calc(100vw - 80px);
+  }
+
+  .delAccModalErrLottie {
+    width: 100px;
+    height: 100px;
+  }
+}
